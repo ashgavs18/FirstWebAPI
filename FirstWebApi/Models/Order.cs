@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FirstWebApi.Models;
 
@@ -8,7 +9,7 @@ public partial class Order
     public int OrderId { get; set; }
 
     public string? CustomerId { get; set; }
-
+    
     public int? EmployeeId { get; set; }
 
     public DateTime? OrderDate { get; set; }
